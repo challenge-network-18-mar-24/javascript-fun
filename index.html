@@ -2,20 +2,35 @@
 
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./src/andreaScript.js"></script>
+  <script src="./src/anaLitvi.js"></script>
 </head>
 <html>
-<body>
+  <body>
+    <section class="center">
+      <nav>
+      <p>
+        <button class="b_blue m_20" onclick="goToStart()">Left</button>
+        <button class="b_blue m_20" onclick="goToEnd()">Right</button>
+        <br>
+        <button class="b_blue m_20" onclick="goToHome()">Home</button>
+        <br>
+        <button class="b_blue m_20" onclick="goToUp()">Up</button>
+        <button class="b_blue m_20" onclick="goToDown()">Down</button>
+      </p>
 
-  <p>
-    <button onclick="goToStart()">Start</button>
-    <button onclick="goToEnd()">End</button>
-  </p>
+      <img class="p_60" src="./assets/duck 1.png" alt="Papera">
 
-  <div id="myContainer">
-    <div id="myBlock">
+      </nav>
+    </section>
+
+   <div id="terra"> 
+    <div id="giardino">
+      <div id="acqua">
+        <div id="myDuck">
+        </div>
+      </div>
     </div>
-  </div>
-
-</body>
+  </div>  
+    
+  </body>
 </html>

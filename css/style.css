@@ -1,12 +1,75 @@
-#myContainer {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  background: yellow;
+body{
+  background-color: rgb(212, 252, 238);
 }
-#myBlock {
+
+#myDuck{
   width: 50px;
   height: 50px;
-  position: absolute;
-  background-color: red;
+  position: relative;
+  background-image: url(../assets/duck\ 1.png);
+  margin: 40px;
 }
+
+#acqua{
+  width: 700px;
+  height: 600px;
+  background-color: rgb(43, 184, 240);
+  border-style: dotted; 
+  border-color: rgb(14, 14, 95);
+  border-width: 15px;
+  border-radius: 40%;
+  margin: auto;
+  width: 90%;
+  
+}
+
+#giardino{
+  width: 1200px;
+  height: 800px;
+  background-color: rgb(21, 100, 10); 
+  border:solid;
+  border-width: 0px 0px 30px 20px;
+  border-color: rgb(14, 54, 10);
+  border-radius: 15%;
+  margin: auto;
+  align-content: center;
+}
+
+#terra{
+  height: 900px;
+  border-width: 15px;
+  background-color: rgb(100, 46, 10);
+  border:solid;
+  border-radius: 2%;
+  border-width: 0px 0px 30px 20px;
+  border-color: rgb(59, 29, 8);
+  align-content: center;
+  
+  
+}
+
+.b_blue{
+  background-color: rgb(14, 14, 95);
+  color: rgb(43, 184, 240);
+  border: solid 2px;
+  border-color: rgb(43, 184, 240);
+  border-radius: 25px;
+  padding: 14px 14px;
+  width: 150px;
+}
+.center{
+ text-align: center;
+}
+
+section{
+  content: "";
+  display: table;
+  clear: both;
+  float: right;
+  width: 30%;
+
+  
+}
+
+.m_20{margin: 20px;}
+.p_60{padding:60px;}
