@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./src/andreaScript.js"></script>
+  <script src="./src/angelicaScript.js"></script>
 </head>
 
 <body>
-  <input id="mioInput" />
-  <button onclick="verificaEta()">Verifica</button>
-   
+
+  <!--selettore regioni-->
+  <button onclick="getCapoluogo()">Regioni</button>
+  <select id="inputRegione">
+    <option>Campania</option>
+    <option>Lazio</option>
+    <option>Toscana</option>
+    <option>Sicilia</option>
+    <option>Puglia</option>
+  </select>
+
+
+  <!--selettore colori primari-->
+  <p>
+    <button onclick="getPrimari()">colori primari</button>
+    <select id="coloriPrimari">
+      <option>rosso</option> 
+      <option>giallo</option>
+      <option>blue</option>
+  </p>
+  </select>
+
+
+  <!--selettore colori secondari-->
+  <p>
+    <button onclick="getSecondari()">colori secondari</button>
+    <select id="coloriSecondari">
+      <option>arancione</option>
+      <option>verde</option>
+      <option>viola</option>
+  </p>
+  </select>
+
 </body>
+
 </html>
