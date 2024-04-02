@@ -1,4 +1,4 @@
-function goToStart() {
+/*function goToStart() {
   let myBlock = document.getElementById("myBlock");   
   let pos = 0;
 
@@ -10,4 +10,4 @@ function goToEnd() {
   let pos = 350;
 
   myBlock.style.left = pos + 'px'; 
-}
+}*/

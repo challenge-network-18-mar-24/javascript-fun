@@ -1,0 +1,40 @@
+*{
+    padding: o;
+    margin: 0;
+    display: flex-box;
+}
+
+body {
+    background-color: aqua;
+
+}
+#container {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    background: rgb(226, 223, 11);
+    display: fle;
+    justify-content: center;
+    align-items: center;
+  }
+  #block {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(25, 212, 119);
+  }
+  h1{
+    text-align: center;
+    color: rgb(255, 153, 0);
+    margin: 2rem;
+  }
+
+  .p {
+    width: 20vh;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    display:grid;
+    
+  }
