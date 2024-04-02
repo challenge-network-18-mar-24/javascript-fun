@@ -10,7 +10,30 @@
   <p>
     <button onclick="goToStart()">Start</button>
     <button onclick="goToEnd()">End</button>
+    <button onclick="jumpS()">Jump to Start!</button>
+    <button onclick="jumpE()">Jump to End!</button>
   </p>
+  <select name="colori" id="inputColors">
+    <option value="arancio">arancio</option>
+    <option value="verde">verde</option>
+    <option value="blu">blu</option>
+    <option value="grigio">grigio</option>
+    <option value="nero">nero</option>
+    <option value="rosa">rosa</option>
+  </select>
+  <button onclick="comandaColore()">verifica</button>
+  <p>Seleziona la tua età:</p>
+  <ul style="list-style: none;">
+    <li><b style="color: orange">arancio</b>: nessuno sconto (10€)</li>
+    <li><b style="color: blue">blu</b>: sconto baby(3€) </li>
+    <li><b style="color: green">verde</b>: sconto youth(5€) </li>
+    <li><b style="color: black">nero</b>: sconto anzianità (8€)</li>
+    <li><b style="color:hotpink">rosa</b>: sconto studenti (6€)</li>
+    <li><b><i>prossimamente</b>: placeholder<i></li>
+  </ul>
+  <input id="inputEta" style="margin-bottom: 8px;">
+  <!-- <button onclick="verificaEta()">Verifica</button> -->
+  <button onclick="verificaEta()">Verifica</button>
 
   <div id="myContainer">
     <div id="myBlock">
