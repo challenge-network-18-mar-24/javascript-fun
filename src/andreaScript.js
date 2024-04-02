@@ -1,4 +1,4 @@
-function goToStart() {
+/*function goToStart() {
   let myBlock = document.getElementById("myBlock");   
   let pos = 0;
 

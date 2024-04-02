@@ -1,6 +1,6 @@
 #myContainer {
-  width: 400px;
-  height: 50px;
+  width: 600px;
+  height: 600px;
   position: relative;
   background: yellow;
 }
@@ -9,4 +9,5 @@
   height: 50px;
   position: absolute;
   background-color: red;
+  
 }
