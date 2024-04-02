@@ -78,7 +78,9 @@ function verificaRegione() {
 
   let regione = cittaRegioni[citta];
 
-  if (regione) {
+  if (citta == "") {
+    alert("Città non valida");
+  } else if (citta) {
     alert(`${citta} e' il capoluogo della ${regione}`);
   } else {
     alert("Non è un capoluogo di una regione italiana");
