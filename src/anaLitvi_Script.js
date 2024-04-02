@@ -10,7 +10,7 @@ function verificaEta() {
     alert("Adolescente");
   } else if (eta >= 18 && eta < 55) {
     alert("Adulto");
-  } else if (eta = undefined) 
+  } else if ( none) 
   {alert("Adulto");
   } else {
     alert("Persona");
