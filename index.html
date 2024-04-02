@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./src/andreaScript.js"></script>
+  <script src="./src/anaLitvi_Script.js"></script>
+  <title>Forms</title>
+
 </head>
-<html>
+
 <body>
+  <section id="demo" class="content_style">
+    <h1>Form:</h1>
+    <form action="">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname">
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"> <br><br>
+  
+      <label for="edge">Your edge:</label>
+      <input id="myEdge" />
+      <button onclick="verificaEta()">Verifica</button>
 
-  <p>
-    <button onclick="goToStart()">Start</button>
-    <button onclick="goToEnd()">End</button>
-  </p>
+      <label for="Country">Your Country:</label>
+      <input id="myCountry"/>
+      <button onclick="verificaCitta()">Verifica</button> <br><br>
 
-  <div id="myContainer">
-    <div id="myBlock">
-    </div>
-  </div>
+      <select id="regionIt">
+        <option value="Roma">Roma</option>
+        <option value="Milano">Milano</option>
+        <option value="Napoli">Napoli</option>
+      </select>
+      <button onclick="getRegion()">Dimmi la Regione!</button>
+
+
+    </form>
+<div class="p_80">    
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "Thanks for your time!"'> Click Me!</button>
+</div>
+
 
 </body>
 </html>
+
+<!----------
+<button onclick="getElementById(demo)">Click Me!</button>
+  </section>
+--/!>
