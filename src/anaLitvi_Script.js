@@ -2,7 +2,11 @@ function verificaEta() {
   let myEdge = document.getElementById("myEdge");
   let eta = myEdge.value;
 
-  if (eta < 3) {
+
+  
+  if (eta =="") 
+  {alert("Non definito");
+  }else if (eta < 3) {
     alert("Infante");
   } else if (eta >= 3 && eta < 12) {
     alert("Bambino");
@@ -10,8 +14,8 @@ function verificaEta() {
     alert("Adolescente");
   } else if (eta >= 18 && eta < 55) {
     alert("Adulto");
-  } else if ( none) 
-  {alert("Adulto");
+  } else if (eta >= 55 && eta < 75) 
+  {alert("Maturo");
   } else {
     alert("Persona");
   }
@@ -23,7 +27,11 @@ function verificaCitta() {
   let myCountry = document.getElementById("myCountry");
   let citta = myCountry.value;
 
-  if (citta == Roma) {
+  console.log(citta)
+  
+  if (citta == "") {
+    alert("Non Definito");
+  }else if (citta == Roma) {
     alert("Centro Italia, Lazio");
   } else if (citta == Milano) {
     alert("Nord Italia, Lombardia");
