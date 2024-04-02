@@ -1,9 +1,9 @@
-function verificaEta() {
+function verificaCittà() {
   let mioInput = document.getElementById("mioInput");
-  let eta = mioInput.value;
+  let città = mioInput.value;
 
-  if (eta < 3) {
-    alert("L'ingresso e' gratuito");
+  if (città = Roma) {
+    alert("Regione Lazio");
   } else if (eta >= 3 && eta < 12) {
     alert("L'ingresso e' 5 euro");
   } else if (eta >= 12 && eta < 65) {
