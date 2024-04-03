@@ -2,17 +2,18 @@
   width: 400px;
   height: 50px;
   position: relative;
-  background: yellow;
+  background: black;
   display: flex;
   gap: 5px;
 }
-.blocco-blu {
-  background-color: blue;
+.blocco-rosa {
+  background-color: palevioletred;
 }
-.blocco-rosso {
-  background-color: red;
+.blocco-brown {
+  background-color: brown;
 }
 .blocco {
   width: 50px;
   height: 50px;
 }
+
