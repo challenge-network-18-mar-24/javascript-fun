@@ -1,13 +1,12 @@
-function goToStart() {
-  let myBlock = document.getElementById("myBlock");   
-  let pos = 0;
+function creaBlocco() {
+  let myContainer = document.getElementById("myContainer");
+  let numeroBlocchi = document.getElementById("numeroBlocchi").value;
 
-  myBlock.style.left = pos + 'px';
-}
+  for (let numero = 0; numero < numeroBlocchi; numero++) {
+    let blocco = document.createElement("div");
+    blocco.id = "blocco" + (numero + 1);
+    blocco.className = "blocco blocco-rosso";
 
-function goToEnd() {
-  let myBlock = document.getElementById("myBlock");   
-  let pos = 350;
-
-  myBlock.style.left = pos + 'px'; 
+    myContainer.appendChild(blocco);
+  }
 }

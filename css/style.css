@@ -3,10 +3,16 @@
   height: 50px;
   position: relative;
   background: yellow;
+  display: flex;
+  gap: 5px;
 }
-#myBlock {
+.blocco-blu {
+  background-color: blue;
+}
+.blocco-rosso {
+  background-color: red;
+}
+.blocco {
   width: 50px;
   height: 50px;
-  position: absolute;
-  background-color: red;
 }
