@@ -2,20 +2,24 @@
 
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./src/andreaScript.js"></script>
 </head>
 <html>
 <body>
 
-  <p>
-    <button onclick="goToStart()">Start</button>
-    <button onclick="goToEnd()">End</button>
-  </p>
-
-  <div id="myContainer">
-    <div id="myBlock">
+  <div class="container">
+    <div>
+      <select id="selectSx" >
+      </select>
+      <button onclick="spostaDx()">Sposta</button>
+    </div>
+  
+    <div>
+      <select id="selectDx" >
+      </select>
+      <button onclick="spostaSx()">Sposta</button>
     </div>
   </div>
-
+  
+  <script src="./src/andreaScript.js"></script>
 </body>
 </html>
