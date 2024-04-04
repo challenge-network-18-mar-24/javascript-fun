@@ -1,4 +1,27 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#bigContainer{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container {
-  display: flex;
-  gap: 5rem;
+	display: flex;
+	gap: 5rem;
+}
+
+select{
+	background-color: #f48a19 !important;
+	border-radius: 20px;
+}
+
+button{
+	border-radius: 20px;
 }
