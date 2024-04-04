@@ -1,16 +1,16 @@
-let opzioniDx = ["Paperino", "Topolino", "Pippo"];
-let opzioniSx = ["Pluto", "Clarabella", "Eta Beta"];
+let optionRight = ["Paperino", "Topolino", "Pippo"];
+let optionLeft = ["Pluto", "Clarabella", "Eta Beta"];
 
-let selectDx = document.getElementById("selectDx");
-let selectSx = document.getElementById("selectSx");
+let selectRight = document.getElementById("selectRight");
+let selectLeft = document.getElementById("selectLeft");
 
 function createSelect() {
-    selectDx.innerHTML = "<option value=''></option>";
-    selectSx.innerHTML = "<option value=''></option>";
+    selectRight.innerHTML = "<option value=''></option>";
+    selectLeft.innerHTML = "<option value=''></option>";
 
     // Creazione select a destra
-    for (let x = 0; x < opzioniDx.length; x++) {
-        let nomeOpzione = opzioniDx[x];
+    for (let x = 0; x < optionRight.length; x++) {
+        let nomeOpzione = optionRight[x];
 
         // Crea opzione
         let option = document.createElement("option");
@@ -18,19 +18,19 @@ function createSelect() {
         option.value = x;
 
         // Aggungi opzione alla select
-        selectDx.appendChild(option);
+        selectRight.appendChild(option);
   	}
 
 	// Creazione select a sinistra
 	let x = 0;
-	while (x < opzioniSx.length) {
-		let nomeOpzione = opzioniSx[x];
+	while (x < optionLeft.length) {
+		let nomeOpzione = optionLeft[x];
 
 		// Crea opzione
 		let option = new Option(nomeOpzione, x);
 
 		// Aggungi opzione alla select
-		selectSx.options.add(option);
+		selectLeft.options.add(option);
 		x++
 	}
 }
@@ -38,27 +38,29 @@ function createSelect() {
 createSelect();
 
 function moveRight() {
-	let i = selectSx.value;
-	let optionName = opzioniSx[i]
+	if (selectLeft.value == '') return
+	let i = selectLeft.value;
+	let optionName = optionLeft[i]
 
 	// aggiungi all'array lato dx
-	opzioniDx.push(optionName);
+	optionRight.push(optionName);
 
 	// togli dall'array lato sx
-	opzioniSx.splice(i, 1); 
+	optionLeft.splice(i, 1); 
 
 	createSelect();
 }
 
 function moveLeft() {
-	let i = selectSx.value;
-	let optionName = opzioniSx[i]
+	if (selectRight.value == '') return
+	let i = selectRight.value;
+	let optionName = optionRight[i]
 
 	// aggiungi all'array lato dx
-	opzioniDx.push(optionName);
+	optionLeft.push(optionName);
 
 	// togli dall'array lato sx
-	opzioniSx.splice(i, 1); 
+	optionRight.splice(i, 1); 
 
 	createSelect();
 }
