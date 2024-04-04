@@ -1,18 +1,4 @@
-#myContainer {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  background: yellow;
+.container {
   display: flex;
-  gap: 5px;
-}
-.blocco-blu {
-  background-color: blue;
-}
-.blocco-rosso {
-  background-color: red;
-}
-.blocco {
-  width: 50px;
-  height: 50px;
+  gap: 5rem;
 }

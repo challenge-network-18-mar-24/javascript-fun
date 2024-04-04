@@ -1,12 +1,55 @@
-function creaBlocco() {
-  let myContainer = document.getElementById("myContainer");
-  let numeroBlocchi = document.getElementById("numeroBlocchi").value;
+let opzioniDx = ["Paperino", "Topolino", "Pippo"];
+let opzioniSx = ["Pluto", "Clarabella", "Eta Beta"];
 
-  for (let numero = 0; numero < numeroBlocchi; numero++) {
-    let blocco = document.createElement("div");
-    blocco.id = "blocco" + (numero + 1);
-    blocco.className = "blocco blocco-rosso";
+let selectDx = document.getElementById("selectDx");
+let selectSx = document.getElementById("selectSx");
 
-    myContainer.appendChild(blocco);
+function generaSelect() {
+  selectDx.innerHTML = "<option value=''></option>";
+  selectSx.innerHTML = "<option value=''></option>";
+
+  // Creazione select a destra
+  for (let x = 0; x < opzioniDx.length; x++) {
+    let nomeOpzione = opzioniDx[x];
+
+    // Crea opzione
+    let option = document.createElement("option");
+    option.innerHTML = nomeOpzione;
+    option.value = x;
+
+    // Aggungi opzione alla select
+    selectDx.appendChild(option);
   }
+
+  // Creazione select a sinistra
+  let x = 0;
+  while (x < opzioniSx.length) {
+    let nomeOpzione = opzioniSx[x];
+
+    // Crea opzione
+    let option = new Option(nomeOpzione, x);
+
+    // Aggungi opzione alla select
+    selectSx.options.add(option);
+    x++
+  }
+}
+
+generaSelect();
+
+function spostaDx() {
+  let indice = selectSx.value;
+  let nomeOpzione = opzioniSx[indice]
+
+  // aggiungi all'array lato dx
+  opzioniDx.push(nomeOpzione);
+
+  // togli dall'array lato sx
+  opzioniSx.splice(indice, 1); 
+
+  generaSelect();
+}
+
+function spostaSx() {
+
 }

@@ -2,18 +2,24 @@
 
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./src/andreaScript.js"></script>
 </head>
 <html>
 <body>
 
-  <p>
-    <input id="numeroBlocchi" >
-    <button onclick="creaBlocco()">Crea blocchi</button>
-  </p>
-
-  <div id="myContainer">
+  <div class="container">
+    <div>
+      <select id="selectSx" >
+      </select>
+      <button onclick="spostaDx()">Sposta</button>
+    </div>
+  
+    <div>
+      <select id="selectDx" >
+      </select>
+      <button onclick="spostaSx()">Sposta</button>
+    </div>
   </div>
-
+  
+  <script src="./src/andreaScript.js"></script>
 </body>
 </html>
