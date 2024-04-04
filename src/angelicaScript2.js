@@ -8,7 +8,7 @@ function leggiVoto() {
             alert("gravemente insufficiente")
         } else if (numero >=4 && numero <6){
             alert("insufficiente");
-        } else {
+        } else if (numero >=6 && numero == 10) {
             alert("sufficiente");
         }
 
