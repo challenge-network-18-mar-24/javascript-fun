@@ -54,10 +54,10 @@ function spostaSx() {
   let indice = selectDx.value;
   let nomeOpzione = opzioniDx[indice]
 
-  // aggiungi all'array lato dx
+  // aggiungi all'array lato sx
   opzioniSx.push(nomeOpzione);
 
-  // togli dall'array lato sx
+  // togli dall'array lato dx
   opzioniDx.splice(indice, 1);
 
   generaSelect();
