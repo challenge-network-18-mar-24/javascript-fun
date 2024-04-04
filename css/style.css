@@ -1,17 +1,28 @@
 #myContainer {
-  width: 400px;
+  width: 600px;
   height: 50px;
   position: relative;
-  background: yellow;
+  background: black;
   display: flex;
   gap: 5px;
 }
+
 .blocco-blu {
   background-color: blue;
 }
+
 .blocco-rosso {
   background-color: red;
 }
+
+.blocco-giallo {
+  background-color: yellow;
+}
+
+.blocco-verde {
+  background-color: yellowgreen;
+}
+
 .blocco {
   width: 50px;
   height: 50px;

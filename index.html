@@ -5,15 +5,28 @@
   <script src="./src/andreaScript.js"></script>
 </head>
 <html>
+
 <body>
 
-  <p>
-    <input id="numeroBlocchi" >
-    <button onclick="creaBlocco()">Crea blocchi</button>
-  </p>
+  <div>
+    <select id="coloreBlocchi" onclick="coloreBlocco()">
+      <option value="0">Rosso</option>
+      <option value="1">Blu</option>
+      <option value="2">Giallo</option>
+      <option value="3">Verde</option>
+    </select>
+
+    <p>
+      <input id="numeroBlocchi">
+      <button onclick="coloreBlocco()">Crea blocchi</button>
+    </p>
+
+
+  </div>
 
   <div id="myContainer">
   </div>
 
 </body>
+
 </html>
