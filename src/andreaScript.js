@@ -45,11 +45,21 @@ function spostaDx() {
   opzioniDx.push(nomeOpzione);
 
   // togli dall'array lato sx
-  opzioniSx.splice(indice, 1); 
+  opzioniSx.splice(indice, 1);
 
   generaSelect();
 }
 
 function spostaSx() {
+  let indice = selectDx.value;
+  let nomeOpzione = opzioniDx[indice]
+
+  // aggiungi all'array lato dx
+  opzioniSx.push(nomeOpzione);
+
+  // togli dall'array lato sx
+  opzioniDx.splice(indice, 1);
+
+  generaSelect();
 
 }
