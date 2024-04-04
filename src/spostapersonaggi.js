@@ -1,5 +1,5 @@
-let opzioniDx = ["Paperino", "Topolino", "Pippo"];
-let opzioniSx = ["Pluto", "Clarabella", "Eta Beta"];
+let opzioniDx = ["Paperino", "Topolino", "Pippo", "Ariel", "Elsa", "Cenerentola", "Pinocchio", "Minni"];
+let opzioniSx = ["Pluto", "Clarabella", "Eta Beta", "Biancaneve", "Paperina", "Anna", "Olaf", "Peter Pan"];
 
 let selectDx = document.getElementById("selectDx");
 let selectSx = document.getElementById("selectSx");
@@ -47,6 +47,8 @@ function spostaDx() {
     // togli dall'array lato sx
     opzioniSx.splice(indice, 1);
 
+    alert("Hai spostato il personaggio Disney: " + nomeOpzione + " a sinistra");
+
     generaSelect();
 }
 
@@ -59,6 +61,8 @@ function spostaSx() {
 
     // togli dall'array lato dx
     opzioniDx.splice(indice, 1);
+
+    alert("Hai spostato il personaggio Disney: " + nomeOpzione + " a destra");
 
     generaSelect();
 }
