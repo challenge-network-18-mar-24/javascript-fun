@@ -1,10 +1,5 @@
-let categorie = ["disney", "pokemon", "dragonball"];
-
-let elementi = {
-  0: ["pippo", "topolino"],
-  1: ["pikachu", "bulbasaur"],
-  2: ["vegeta", "goku"]
-}
+let categorie = [];
+let elementi = {}
 
 // Funzione che crea una card categoria
 let creaCategoria = (nomeCategoria, indice) => {
@@ -21,8 +16,14 @@ let creaCategoria = (nomeCategoria, indice) => {
   let input = document.createElement("input");
   input.id = "input" + indice;
 
+  // crea button per aggiungere elemento
+  let button = document.createElement("button");
+  button.innerHTML = "Aggiungi elemento";
+  button.onclick = () => aggiungiElemento(indice);
+
   divCategoria.appendChild(spanTitolo);
   divCategoria.appendChild(input);
+  divCategoria.appendChild(button);
 
   // Append elementi al divCategoria
   elementi[indice].forEach((nomeElemento) => {
@@ -49,12 +50,23 @@ let renderCategorie = () => {
 
 renderCategorie();
 
-// Bottone per aggiungere un'altra categoria
+// Funzione per aggiungere un'altra categoria
 let aggiungiCategoria = () => {
   let inputCategoria = document.getElementById("inputCategoria");
   let nomeCategoria = inputCategoria.value;
 
   categorie.push(nomeCategoria);
+  let ultimoIndice = categorie.length - 1 
+  elementi[ultimoIndice] = [];
 
-  renderCategorie()
+  renderCategorie();
+}
+
+// Funzione per aggiungere un nuovo elemento
+let aggiungiElemento = (indice) => {
+  let inputElemento = document.getElementById("input" + indice);
+  let nomeElemento = inputElemento.value;
+  elementi[indice].push(nomeElemento);
+
+  renderCategorie();
 }
