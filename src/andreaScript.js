@@ -1,55 +1,41 @@
-let opzioniDx = ["Paperino", "Topolino", "Pippo"];
-let opzioniSx = ["Pluto", "Clarabella", "Eta Beta"];
+let categorie = ["diney", "pokemon", "dragonball"];
 
-let selectDx = document.getElementById("selectDx");
-let selectSx = document.getElementById("selectSx");
-
-function generaSelect() {
-  selectDx.innerHTML = "<option value=''></option>";
-  selectSx.innerHTML = "<option value=''></option>";
-
-  // Creazione select a destra
-  for (let x = 0; x < opzioniDx.length; x++) {
-    let nomeOpzione = opzioniDx[x];
-
-    // Crea opzione
-    let option = document.createElement("option");
-    option.innerHTML = nomeOpzione;
-    option.value = x;
-
-    // Aggungi opzione alla select
-    selectDx.appendChild(option);
-  }
-
-  // Creazione select a sinistra
-  let x = 0;
-  while (x < opzioniSx.length) {
-    let nomeOpzione = opzioniSx[x];
-
-    // Crea opzione
-    let option = new Option(nomeOpzione, x);
-
-    // Aggungi opzione alla select
-    selectSx.options.add(option);
-    x++
-  }
+let elementi = {
+  0: ["pippo", "topolino"],
+  1: ["pikachu", "bulbasaur"],
+  2: ["vegeta", "goku"]
 }
 
-generaSelect();
+let renderCategorie = () => {
+  let container = document.getElementById("container");
 
-function spostaDx() {
-  let indice = selectSx.value;
-  let nomeOpzione = opzioniSx[indice]
+  container.innerHTML = "";
 
-  // aggiungi all'array lato dx
-  opzioniDx.push(nomeOpzione);
+  categorie.forEach((nomeCategoria, indice) => {
+    let divCategoria = document.createElement("div");
+    
+    // Titolo div categoria
+    let spanTitolo = document.createElement("span");
+    spanTitolo.innerHTML = nomeCategoria;
+    
+    // input elementi categoria 
+    let input = document.createElement("input");
+    input.id = "input" + indice;
 
-  // togli dall'array lato sx
-  opzioniSx.splice(indice, 1); 
+    divCategoria.appendChild(spanTitolo);
+    divCategoria.appendChild(input);
 
-  generaSelect();
+    container.appendChild(divCategoria);
+  })
 }
 
-function spostaSx() {
+renderCategorie();
 
+let aggiungiCategoria = () => {
+  let inputCategoria = document.getElementById("inputCategoria");
+  let nomeCategoria = inputCategoria.value;
+
+  categorie.push(nomeCategoria);
+
+  renderCategorie()
 }
