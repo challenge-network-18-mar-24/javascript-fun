@@ -10,3 +10,4 @@ function creaBlocco() {
     myContainer.appendChild(blocco);
   }
 }
+
