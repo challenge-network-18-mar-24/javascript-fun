@@ -3,12 +3,13 @@
 <head>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./src/andreaScript.js"></script>
-  
+
 </head>
 <html>
+
 <body>
-  
-  
+
+
   <p>
     <button onclick="goOne()">Start</button>
     <button onclick="goTwo()">2</button>
@@ -20,6 +21,32 @@
     <div id="myBlock">
     </div>
   </div>
+
+  <h1>Prenotazione Posti</h1>
+  <p>Posti disponibili: <span id="postiDisponibili">100</span></p>
+  <input type="number" id="numeroPrenotazione" placeholder="Inserisci il numero di posti da prenotare">
+  <button onclick="effettuaPrenotazione()">Prenota</button>
+
+
+  <div class="container">
+    <div>
+      <select id="selectSx">
+
+      </select>
+      <button onclick="spostaDx()">Sposta</button>
+    </div>
+    <div>
+
+      <select id="selectDx">
+
+      </select>
+      <button onclick="spostaSx()">Sposta</button>
+    </div>
+  </div>
+
+
+
   <script src="./src/fabrizioScript.js"></script>
 </body>
+
 </html>
