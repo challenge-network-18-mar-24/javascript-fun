@@ -35,6 +35,6 @@ let button = document.createElement("button");
 button.innerHTML = "aggiungi elemento";
 button.onclick = () => aggiungiElemento(indice);
 
-divCategoria.appendChild(spanTitolo);
-divCategoria.appendChild(input);
-divCategoria.appendChild(button);
+    divCategoria.appendChild(spanTitolo);
+    divCategoria.appendChild(input);
+    divCategoria.appendChild(button);
