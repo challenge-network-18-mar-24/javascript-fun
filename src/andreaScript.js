@@ -11,3 +11,6 @@ function goToEnd() {
 
     myBlock.style.left = pos + 'px';
 }
+
+
+
