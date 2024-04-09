@@ -1,12 +1,90 @@
-#myContainer {
-  width: 400px;
-  height: 50px;
-  position: relative;
-  background: yellow;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-#myBlock {
-  width: 50px;
-  height: 50px;
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(45deg, #d00e0e, #e87b7b);
+}
+
+#main {
+	flex-direction: column;
+}
+
+#divAddCategory {
+	width: 200px;
+	margin: 80px auto 0;
+}
+
+#container {
+	margin-top: 100px;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#divAddCategory {
+	flex-direction: column;
+	gap: 10px;
+}
+
+.card {
+	width: 210px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: #ffebcd;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	margin-top: 35px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.divElement {
+  position: relative;
+}
+
+.btn {
+	background-color: aquamarine;
+	padding: 2px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+}
+
+.redCross {
+  width: 25px;
+  height: 25px;
   position: absolute;
-  background-color: red;
-} 
+  top: 0;
+  right: 0;
+  background-image: url(./../img/redClose.png);
+  background-color: transparent;
+  background-size: cover;
+  border: 0;
+}
+
+input {
+	border-radius: 20px;
+	padding-left: 10px;
+}
+
+.closeBtn {
+	width: 30px;
+	height: 30px;
+	background-image: url(./../img/close.png);
+	background-size: 120%;
+	background-position: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
